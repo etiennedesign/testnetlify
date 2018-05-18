@@ -1,0 +1,77 @@
+---
+layout: landing-page-en
+lang: en
+title: WorkflowGen | Workflow Software and Low-Code Platform
+description: Workflow management software and BPM solution. Grow your Digital Business with fluid process automation.
+image: /img/workflowgen-workflow-thumbnail.png
+ref: landing-page-resellers
+permalink: /en/workflowgen-for-resellers/
+published: false
+---	
+<section class="landing-top-section var">
+	<div class="landing-top-section-overlay">
+		<div class="landing-top-section-content">
+			<a href="/"><img src="/img/wfg-logo.svg" width="250" height="37" style="margin-bottom: .5rem;"></a>
+			<h1 class="center" style="color: #fff; margin-top: 1.5rem; margin-bottom: 0">Become a certified<br/>WorkflowGen resaler</h1>
+			
+			<!--<div style="text-align: center;">
+				<a href="/en/contact/"  class="button-white" target="_blank">Contact us</a>
+			</div>-->
+
+			<a href="/#section-1" id="downbtn"><img alt="icone down" src="/img/icon-down.svg" width="60px" height="60px" style="margin-top: 2rem;"></a>
+			
+		</div>
+	</div>
+</section>
+
+
+<!-- SECTION 2 ____________________________________________________________________ -->
+<section id="mainsection-a">
+	<div class="anchor" id="section-1"></div>
+	<div class="content">
+		<div class="videocenter">
+			<div class="videowrapper">
+				<iframe id="videotour" width="609" height="342" src="https://www.youtube.com/embed/BKb5JX2xRXo?rel=0&amp;showinfo=0&amp;cc_load_policy=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+		
+	
+		<div class="row" style="text-align: center;margin-top: 2rem;">
+			<a href="/en/contact/"  class="button-green" target="_blank">Contact us</a>
+		</div>
+	</div>
+</section>
+
+
+
+
+<script>
+    $(document).ready(function(){
+      var offset = 0;
+      var target = $(this.hash);
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top + offset
+          }, 800, function(){
+            window.location.hash = hash;
+            window.history.replaceState(null, null, window.location.pathname);
+          });
+        }
+      });
+    });
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#downbtn').on('click', function(ev) {
+ 
+    $("#videotour")[0].src += "&autoplay=1";
+    ev.preventDefault();
+ 
+  });
+});
+</script>

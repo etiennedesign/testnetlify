@@ -1,0 +1,53 @@
+@media screen and (min-width: 1500px) {
+.col-center {
+    width: 700px;
+    margin-left: calc(50% - 350px);
+}
+
+.logo {
+    left: 15%;
+}
+
+.content {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.footer-container {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.content-revert-mobile {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.contentheader {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.menu {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.text-center {
+    width: 800px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.formcontent {
+    width: 40%;
+    margin-left: 30%;
+    position: relative;
+    float: left;
+}
+
+.screenshot-slide-1 {
+    margin-left: 3rem;
+}
+
+}

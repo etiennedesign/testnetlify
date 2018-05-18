@@ -1,0 +1,153 @@
+---
+layout: default-zh-hans
+lang: zh-Hans
+selector: 中文
+en-order: 3
+fr-order: 3
+es-order: 3
+zh-order: 4
+title: 低码BPM软件技术
+description: 低码BPM软件，经考验的基础结构，高性能，GraphQL API
+image: /img/workflowgen-workflow-thumbnail.png
+ref: technology
+permalink: /zh-hans/low-code-bpm-software-technology/
+---	
+
+<!-- BANNER ____________________________________________________________________ -->
+<section id="hero-section" class="gradient">
+	<div class="content">
+	<div class="text-center">
+
+		<h1 class="center">久经考验的低码基础结构，性能高</h1>
+
+	</div>
+	</div>
+</section>
+
+
+<!-- SECTION 1 ____________________________________________________________________ -->
+<section class="main-section">
+	<div class="content">
+
+	<div class="text-center">
+		<h2>提供以流程为导向的高级解决方案，<br/>具有高度可配置性</h2>
+		<p>WorkflowGen包含一个功能强大.NET工作流引擎，该引擎经过优化，可在处理大量事务时运行复杂进程。其功能齐全的网页式管理模块提供了流畅的用户体验，来管理您的流程。这样您能通过开箱即用的高级工作流功能集中关注流程配置和集成点，这些高级工作流功能包括委托，自定义通知，子流程，同步化下的活动平行，系统操作（webhooks，网络服务，.NET 程序集），流程版本控制，和高级授权管理（申请者，演员，主管，工作流数据可见性）。</p>
+	</div>
+
+		<div id="wfg-infrastructure"></div>
+	</div>
+</section>
+
+<!-- SECTION 1 ____________________________________________________________________ -->
+<section class="main-section">
+	<div class="content">
+		<div class="text-center">
+			<h2>用WorkflowGen现实强大的系统整合</h2>
+
+			<p>这个视屏将展示如何使用WorkflowGen整合现存的软件构架，以此到达流线化和自动化您的工作流程。举例，某个保险公司的客户与代表界面。</p>
+		
+			<div class="videocenter" style="margin-top: 3rem;">
+				<div class="videowrapper">
+					<div class="youtube" data-embed="VGWrfRHuzTM"> 
+   						<div class="play-button"></div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<div class="border"></div>
+<!-- SECTION 2 ____________________________________________________________________ -->
+<section class="main-section">
+	<div class="content">
+
+	<div class="text-center">
+		<h2>GraphQL API，Webhooks 和 Node.js 集成</h2>
+		<p>使用 GraphQL，开发人员可以控制他们想要操作的和与WorkflowGen API交换的数据。不管是对于移动应用程序，网页程序或是微服务，开发人员都能获得想要的具备最佳性能的数据。WorkflowGen GraphQL API提供了全新的集成和定制化功能，方法是让开发人员扩展GraphQL架构，添加自己的类别、查询和突变。开发人员拥有了广阔的自由空间和快捷速度，就能够脱离传统工作流框架和一般意义上的BPM，创造出高附加值的独创解决方案。</p>
+	</div>
+		
+	
+	<div id="wfg-graphql"></div>
+
+
+		<div class="text-center">
+		<p>Incoming webhooks是集成WorkflowGen与外部应用程序的现代且简单的解决方案。开发人员可以创建Incoming webhook以便完成工作流操作或创建新的请求，还有更多可用的操作。开发人员只需将一个JSON文件粘贴到唯一的URL上，该URL由WorkflowGen的新Incoming webhook工作流程序生成；无需额外认证。</p>
+		<br/>
+		<p>GraphQL API 和incoming webhooks 是作为ISS程序运行的Node.js 应用程序，与WorkflowGen .NET 基础结构完全整合。这种在.NET工作流引擎上使用Node.js的全新混合算法提供了两个方面的优势：使用Node.js 快速集成和定制，以及.NET的高性能和成熟的BPM算法。</p>	
+	</div>
+
+	</div>
+</section>
+
+<div class="border"></div>
+<!-- SECTION 3 ____________________________________________________________________ -->
+<section class="main-section">
+	<div class="content">
+	<div class="text-center">
+		<h2>可扩展的基础结构</h2>
+		<p>WorkflowGen 支持网络场配置，让您能设置两个或多个网络服务器来处理工作流请求。这类配置提高了性能，展现了高可用性。<br/><br/>您可以配置WorkflowGen将文件数据存储在数据库或文件系统中。数据库存储简化了文件数据管理，无需中断服务就可进行备份。文件系统存储拥有以下优势：</p>
+		<ul>
+			<li>最优化数据库体积和数据库服务器CPU负载</li>
+			<li>降低网络服务器和数据库服务器之间使用的网络带宽</li>
+			<li>在本地或远程文件夹中存储文件数据</li>
+		</ul>
+	</div>
+		<div id="wfg-high-scability"></div>
+	<div class="text-center">
+		<p>WorkflowGen提供多个选项，以便根据您的约束条件优化存储大小和响应时间。例如，您可以减少在用户门户首页上显示的数据量，或者，您可以定义流程数据，以便按操作存储所有版本的数据值，或仅存储最新版本。<br/><br/>由于有了数据库场，WorkflowGen能以独特方式大幅提高流程响应时间。除了“Master”WorkflowGen主数据库外，您还可以设置一个只读的“Slave”从属数据库，该数据库可以实时复制主数据库的内容。这种配置下，WorkflowGen将只读的SQL查询转发到从属数据库上，而且由于“读取”查询比“写入”命令更多，产品的性能得到显著提高。只有SQL Server 数据库支持数据库缩放。</p>
+	</div>
+	</div>
+</section>
+
+
+<div class="border"></div>
+<!-- SECTION 4 ____________________________________________________________________ -->
+<section class="main-section">
+	<div class="content">
+
+	<div class="text-center">
+		<h2>企业级表单设计器</h2>
+		<p>使用WorkflowGen的内置网页表单设计器，您可以快速创建具有企业级功能的高级表单，包括网格视图管理，多语言UI，自定义工具和独特的交互式工作流视图，从而通过操作直观地定义表单行为。多亏了透明的ASP.NET网页表单生成器和一个内置的C#代码后置编辑器，您可以进行各种自定义和集成。</p>
+	</div>
+
+	<div id="wfg-form-designer"></div>
+	
+
+	</div>
+</section>
+
+
+<!-- VIDEO THUMBNAIL SCRIPT -->
+<script type="text/javascript">
+	( function() {
+
+	var youtube = document.querySelectorAll( ".youtube" );
+	
+	for (var i = 0; i < youtube.length; i++) {
+		
+		var source = "/img/yt-thumbnail-"+ youtube[i].dataset.embed +".png";
+		
+		var image = new Image();
+				image.src = source;
+				image.addEventListener( "load", function() {
+					youtube[ i ].appendChild( image );
+				}( i ) );
+		
+				youtube[i].addEventListener( "click", function() {
+
+					var iframe = document.createElement( "iframe" );
+
+							iframe.setAttribute( "frameborder", "0" );
+							iframe.setAttribute( "allowfullscreen", "" );
+							iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&autoplay=1&amp;showinfo=0&amp;cc_load_policy=1" );
+
+							this.innerHTML = "";
+							this.appendChild( iframe );
+				} );	
+	};
+	
+} )();
+</script>

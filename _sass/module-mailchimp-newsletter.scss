@@ -1,0 +1,130 @@
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font-family: "Roboto", sans-serif, Arial;
+}
+
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 3%}
+
+#mc_embed_signup h2 {
+    padding: 0;
+    margin: 15px 0;
+}
+
+#mc_embed_signup .mc-field-group input {
+    border: 1px solid $fieldborders;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#mc_embed_signup .nowrap {
+    white-space: nowrap;
+}
+
+#mc_embed_signup .mc-field-group {
+    clear: left;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+    color: #666;
+    outline-style: none;
+}
+
+#mc_embed_signup .asterisk {
+    color: #f84e4e;
+    position: relative;
+}
+
+#mc_embed_signup .clear {
+    clear: both;
+}
+
+.clear {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#mc_embed_signup div#mce-responses {
+    float: left;
+    top: -1.4em;
+    padding: 0;
+    overflow: hidden;
+    width: 80%;
+    clear: both;
+}
+
+#mc_embed_signup div.response {
+    margin: 0;
+    padding: 0;
+    float: left;
+    top: -1.5em;
+    z-index: 1;
+    width: 100%;
+}
+
+#mc_embed_signup #mce-error-response {
+    display: none;
+}
+
+#mc_embed_signup #mce-success-response {
+    color: #1ec566;
+    display: none;
+}
+
+#mc_embed_signup label.error {
+    display: block;
+    float: none;
+    width: auto;
+    margin-left: 1.05em;
+    text-align: left;
+    padding: .5em 0;
+}
+
+#mc-embedded-subscribe {
+    clear: both;
+    width: auto;
+    display: block;
+    margin: 1em 0 1em 5%;
+}
+
+#mc_embed_signup #num-subscribers span {
+    padding: .5em;
+    border: 1px solid #ccc;
+    margin-right: .5em;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    display: inline-block;
+    margin: 2px 0 1em 0;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 1;
+    color: #f84e4e;
+}
+
+#mc_embed_signup input.mce_inline_error {
+    border-color: $fieldborders !important;
+}

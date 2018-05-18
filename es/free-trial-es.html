@@ -1,0 +1,114 @@
+---
+layout: default-es
+lang: es
+selector: Es
+en-order: 2
+fr-order: 2
+es-order: 4
+zh-order: 2
+title: Comience su prueba gratuita del software WorkflowGen BPM
+description: Inmediatamente acelerar la adaptabilidad de procesos de negocio con la versión de prueba gratuita del software WorkflowGen de flujo de trabajo.
+image: /img/workflowgen-workflow-thumbnail.png
+ref: free-trial
+permalink: /es/version-de-prueba-de-la-aplicacion-de-flujo-de-procesos/
+published: false
+---	
+<section id="freetrial" class="download-header">
+				<div class="formcontent">
+				<div class="free-trial-container">
+					<h1>Versión gratuita de prueba</h1>
+					<form id="freeTrialForm" name="freeTrialForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="padding-top: 1rem;">
+    					<input type="hidden" name="oid" value="00D300000006Ijy">
+   						<input type="hidden" id="retURL" name="retURL" value="https://www.workflowgen.com/es/gracias-por-probar-workflowgen/" />
+   						<input  id="00N0d000003VofK" maxlength="15" name="00N0d000003VofK" value="trial" size="20" type="text" style="display: none;" />
+
+					<div class="line">
+					    <div class="split2-a">
+					        <label for="first_name">Nombre</label>
+					        <br /><input type="text" id="first_name" name="first_name" size="30" maxlength="40" class="inputfields" required><br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="last_name">Apellido</label>
+					        <br /><input type="text" id="last_name" name="last_name" size="30" maxlength="80" class="inputfields" required><br />
+					    </div>
+					</div>
+
+					<div class="line">
+					    <div class="split2-a">
+					    	<label for="company">Compañía</label>
+					        <br /><input type="text" id="company" name="company" size="30" maxlength="40" class="inputfields" required> <br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="phone">Teléfono</label>
+					        <br /><input type="text" id="phone" name="phone" size="30" maxlength="40" class="inputfields"><br />
+					    </div>
+					</div>
+
+					<div class="line">
+					    <div class="split2-a">
+					    	<label for="email">Correo profesional</label>
+					        <br /><input type="email" id="email" name="email" size="30" maxlength="80" class="inputfields" required><br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="country">País</label>
+        					<br /><input type="text" id="country" name="country" maxlength="40" class="inputfields" required><br />
+					    </div>
+					</div>
+
+					    <div class="flex-align-center">
+					    	<button id="submit" type="submit" name="submit" class="btn">Comenzar la prueba</button>
+					    </div>
+
+					    <div class="loader-container">
+					    	<img src="/img/ajax-loader.gif" alt="loading" height="31" width="31" id="loading">
+					    </div>
+
+					    <div class="center greylink" style="padding-top: 40px;">
+					    	<p style="color:#666;font-size: 11pt;">Haciendo click sobre este botón, usted admite estar de acuerdo con nuestro <a href="https://app.box.com/v/wfg-free-trial" target="_blank">Acuerdo de version gratuita de prueba</a>.</p>
+					    </div>
+
+					</form>
+				</div>
+				</div>
+</section>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+        	$('#email').val(getCookie("ClientEmail"));
+        });
+        
+        function getCookie(cname) {
+	    var name = cname + "=";
+	    var decodedCookie = decodeURIComponent(document.cookie);
+	    var ca = decodedCookie.split(';');
+	    for(var i = 0; i <ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') {
+	            c = c.substring(1);
+	        }
+	        if (c.indexOf(name) == 0) {
+	            return c.substring(name.length, c.length);
+	        }
+	    }
+	    return "";
+	}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(e){
+ $('#submit').click(function(){ 
+ var email = $('#email').val();
+ var reg = /^([\w-\.]+@(?!aol.com)(?!att.net)(?!bellsouth.net)(?!charter.net)(?!comcast.net)(?!cox.net)(?!earthlink.net)(?!excite.com)(?!facebook.com)(?!free.fr)(?!gmail.com)(?!gmx.de)(?!googlemail.com)(?!hotmail.co.uk)(?!hotmail.com)(?!hotmail.de)(?!hotmail.fr)(?!hotmail.it)(?!hotmail.kg)(?!hotmail.kz)(?!hotmail.ru)(?!icloud.com)(?!laposte.net)(?!live.ca)(?!live.co.uk)(?!live.com)(?!live.fr)(?!live.nl)(?!lycos.co.uk)(?!lycos.com)(?!lycos.es)(?!lycos.it)(?!mac.com)(?!mail.com)(?!mail.ru)(?!me.com)(?!msn.com)(?!outlook.com)(?!roadrunner.com)(?!sbcglobal.net)(?!verizon.net)(?!web.de)(?!yahoo.ca)(?!yahoo.co.in)(?!yahoo.co.uk)(?!yahoo.com)(?!yahoo.com.au)(?!yahoo.com.br)(?!yahoo.de)(?!yahoo.es)(?!yahoo.fr)(?!yahoo.it)(?!yahoo.ru)(?!yahoo.se)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+  if (reg.test(email)){
+ return 0;
+ }
+ else{
+ swal('Por favor, inserte una dirección de correo de trabajo válida');
+ return false;
+ }
+ });
+});
+</script>

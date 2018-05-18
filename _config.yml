@@ -1,0 +1,16 @@
+markdown: kramdown
+baseurl: ""
+url: https://www.workflowgen.com
+exclude: ['README.md']
+include: ['.htaccess']
+index:
+  en:
+  fr: /fr/
+  es: /es/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass

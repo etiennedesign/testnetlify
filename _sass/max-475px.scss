@@ -1,0 +1,81 @@
+@media screen and (max-width: 475px) {
+
+ .line-version {
+    width: 100%;
+    margin-left: 0;
+}
+
+ input.inputfields[type='email'].email-home {
+    margin-left: 0;
+    width: 100%;
+}
+
+
+ #freetrial .formcontent {
+    width: 94%;
+    margin-left: 3%;
+}
+
+ .free-trial-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.col-4 {
+    width: 50%;
+}
+
+.customerslogos-m,
+.customerslogos-home-m {
+    width: 100%;
+    margin-left: 0;
+}
+
+.text-right,
+.text-left {
+    padding: 0;
+    border: none;
+}
+
+.slide__text {
+    margin-top: -6rem;
+}
+
+.img-right {
+    width: 100%;
+    margin-left: 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.mobile-apps {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+
+
+.img-left {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+a:link.twitter,
+a:link.linkedin,
+a:link.facebook,
+a:link.yt,
+a:link.googleplus,
+a:link.medium {
+    height: 24px;
+    width: 24px;
+}
+
+.frame {
+    padding: 0;
+    border: none;
+}
+
+}

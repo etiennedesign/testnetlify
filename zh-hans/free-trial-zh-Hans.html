@@ -1,0 +1,114 @@
+---
+layout: default-zh-hans
+lang: zh-Hans
+selector: 中文
+en-order: 3
+fr-order: 3
+es-order: 3
+zh-order: 4
+title: 开始使用免费版Workflowgen BPM软件
+description: 免费版Workflowgen工作流程软件帮助加速执行企业业务
+image: /img/workflowgen-workflow-thumbnail.png
+ref: free-trial
+permalink: /zh-hans/workflow-software-free-trial/
+published: false
+---	
+<section id="freetrial" class="download-header">
+				<div class="formcontent">
+				<div class="free-trial-container">
+					<h1>天免费试用Online版本</h1>
+					<form id="freeTrialForm" name="freeTrialForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="padding-top: 1rem;">
+    					<input type="hidden" name="oid" value="00D300000006Ijy">
+   						<input type="hidden" id="retURL" name="retURL" value="https://www.workflowgen.com/zh-hans/thanks-for-trying-workflowgen/" />
+   						<input  id="00N0d000003VofK" maxlength="15" name="00N0d000003VofK" value="trial" size="20" type="text" style="display: none;" />
+
+					<div class="line">
+					    <div class="split2-a">
+					        <label for="first_name">名</label>
+					        <br /><input type="text" id="first_name" name="first_name" size="30" maxlength="40" class="inputfields" required><br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="last_name">姓</label>
+					        <br /><input type="text" id="last_name" name="last_name" size="30" maxlength="80" class="inputfields" required><br />
+					    </div>
+					</div>
+
+					<div class="line">
+					    <div class="split2-a">
+					    	<label for="company">公司 </label>
+					        <br /><input type="text" id="company" name="company" size="30" maxlength="40" class="inputfields" required> <br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="phone">电话</label>
+					        <br /><input type="text" id="phone" name="phone" size="30" maxlength="40" class="inputfields"><br />
+					    </div>
+					</div>
+
+					<div class="line">
+					    <div class="split2-a">
+					    	<label for="email">工作邮箱</label>
+					        <br /><input type="email" id="email" name="email" size="30" maxlength="80" class="inputfields" required><br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="country">国家</label>
+        					<br /><input type="text" id="country" name="country" maxlength="40" class="inputfields" required><br />
+					    </div>
+					</div>
+
+					    <div class="flex-align-center">
+					    	<button id="submit" type="submit" name="submit" class="btn">试用</button>
+					    </div>
+
+					    <div class="loader-container">
+					    	<img src="/img/ajax-loader.gif" alt="loading" height="31" width="31" id="loading">
+					    </div>
+
+					    <div class="center greylink" style="padding-top: 40px;">
+					    	<p style="color:#666;font-size: 11pt;">按下本按钮，您将同意 <a href="https://app.box.com/v/wfg-free-trial" target="_blank">免费试用使用条款</a>.</p>
+					    </div>
+
+					</form>
+				</div>
+				</div>
+</section>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+        	$('#email').val(getCookie("ClientEmail"));
+        });
+        
+        function getCookie(cname) {
+	    var name = cname + "=";
+	    var decodedCookie = decodeURIComponent(document.cookie);
+	    var ca = decodedCookie.split(';');
+	    for(var i = 0; i <ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') {
+	            c = c.substring(1);
+	        }
+	        if (c.indexOf(name) == 0) {
+	            return c.substring(name.length, c.length);
+	        }
+	    }
+	    return "";
+	}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(e){
+ $('#submit').click(function(){ 
+ var email = $('#email').val();
+ var reg = /^([\w-\.]+@(?!aol.com)(?!att.net)(?!bellsouth.net)(?!charter.net)(?!comcast.net)(?!cox.net)(?!earthlink.net)(?!excite.com)(?!facebook.com)(?!free.fr)(?!gmail.com)(?!gmx.de)(?!googlemail.com)(?!hotmail.co.uk)(?!hotmail.com)(?!hotmail.de)(?!hotmail.fr)(?!hotmail.it)(?!hotmail.kg)(?!hotmail.kz)(?!hotmail.ru)(?!icloud.com)(?!laposte.net)(?!live.ca)(?!live.co.uk)(?!live.com)(?!live.fr)(?!live.nl)(?!lycos.co.uk)(?!lycos.com)(?!lycos.es)(?!lycos.it)(?!mac.com)(?!mail.com)(?!mail.ru)(?!me.com)(?!msn.com)(?!outlook.com)(?!roadrunner.com)(?!sbcglobal.net)(?!verizon.net)(?!web.de)(?!yahoo.ca)(?!yahoo.co.in)(?!yahoo.co.uk)(?!yahoo.com)(?!yahoo.com.au)(?!yahoo.com.br)(?!yahoo.de)(?!yahoo.es)(?!yahoo.fr)(?!yahoo.it)(?!yahoo.ru)(?!yahoo.se)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+  if (reg.test(email)){
+ return 0;
+ }
+ else{
+ swal('请输入工作电子邮箱');
+ return false;
+ }
+ });
+});
+</script>

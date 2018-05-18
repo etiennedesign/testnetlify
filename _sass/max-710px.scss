@@ -1,0 +1,485 @@
+@media screen and (max-width: 710px) {
+
+.split4 h3 {
+    text-align: center;
+}
+
+.slide__text h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.customer-quote p {
+    line-height: 18px;
+}
+
+.customer-quote h2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.customers-home h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+/* ------- BLOCKS ------- */
+
+.center {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+#freetrial .formcontent {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.line-version {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.screenshots-center {
+    width: 100%;
+    margin-left: 0;
+}
+
+.img-left .browserbar {
+    float: left;
+}
+
+.contactformcontent {
+    width: 100%;
+    margin-left: 0;
+}
+.column-1 {
+    width: 100%;
+}
+
+.column-2 {
+    margin-left: 0;
+    width: 100%;
+}
+
+.column-3 {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+}
+
+.block-1, .block-2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.split2-a {
+    width: 100%;
+    float: left;
+}
+
+.split2-a.benefits {
+    width: 100%;
+    float: left;
+}
+
+.split2-b {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.split2-a.resources {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.split2-b.resources {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.split3-a.splitcontainer, .split3-b.splitcontainer, .split3-c.splitcontainer {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.splitform-a {
+    width: 100%;
+    float: left;
+}
+
+.splitform-b {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+
+.split2-small-a {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+}
+
+.split2-small-b {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+.split4 {
+    width: 100%;
+    float: left;
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+}
+
+.flex-align-features-content {
+    flex-direction: column;
+}
+
+.formcontent {
+    width: 84%;
+    margin-left: 8%;
+    position: relative;
+    float: left;
+}
+
+.free-trial-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.videocenter {
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+}
+
+.clear {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.centermobile {
+    text-align: center;
+}
+
+.main-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#hero-section {
+    padding-top: 8.2rem;
+    padding-bottom: 4rem;
+}
+
+.banner-features {
+    padding-bottom: 0rem !important;
+}
+
+#posts {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+.mobile-reverse-content,
+.content-revert-mobile {
+    display: flex;
+    -webkit-flex-direction: column-reverse !important;
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
+}
+header nav ul li {
+    width: 88%;
+    margin-left: 6%;
+}
+.anchor {
+    margin-top: -8.2rem;
+    /*same height as header + section padding*/
+ }
+
+ .border-small {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.col-6,
+.col-8 {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+.mobile-spacer {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 6rem;
+}
+
+.random-quote {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.slider p {
+    padding-bottom: 1rem;
+}
+
+.slider .mobileshow p {
+    padding-bottom: 0;
+}
+
+.flex-align-home-elements {
+    flex-direction: column;
+}
+
+header nav input[type=checkbox]:checked ~ ul.mainmenu {
+    margin-top: calc(4.2rem - 30px);
+}
+
+/* ------- END OF BLOCKS ------- */
+
+/* ------- LINKS & BUTTONS ------- */
+.mainmenu a.button-free-trial-mobile:link {
+    width: 88%;
+    margin-left: 6%;
+    text-align: center;
+}
+
+#video-tour-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-reverse,
+.btn {
+    padding: 5px 15px;
+}
+/* ------- END OF LINKS & BUTTONS ------- */
+
+/* ------- IMAGES ------- */
+
+.mobile-apps {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.illustrations-home-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+}
+
+.illustrations-home-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+}
+
+.illustrations-home-left img {
+    margin-right: 0;
+}
+
+.illustrations-home-right img {
+    margin-left: 0;
+}
+
+.logo {
+    background-image: url("../img/logo-workflowgen-m.png");
+    left: 6%;
+    width: 160px;
+    height: 30px;
+    top: 1.3rem;
+}
+.customerslogos {
+    display: none;
+}
+
+.allcustomerslogos {
+    display: none;
+}
+
+.customerslogos-home {
+    display: none;
+}
+
+.customerslogos-m {
+    display: block;
+    margin-top: 2rem;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.customerslogos-home-m {
+    display: block;
+    margin-top: 2rem;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+/* ------- END OF IMAGES ------- */
+
+/* ------- FOOTER ------- */
+
+.copyrights {
+    display: none;
+}
+
+ .copyrights-m {
+    display: block;
+    float: left;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 10%;
+    margin-bottom: 3rem;
+}
+
+ footer .copyrights-m p {
+    text-align: left;
+    color: $textcolor-light;
+ }
+
+ footer .copyrights-m a {
+    color: $textcolor-light !important;
+ }
+
+  footer .copyrights-m a:hover {
+    opacity: .8;
+ }
+
+ .footerblock-1, .footerblock-3 {
+    width: 80%;
+    float: left;
+    margin-top: 0;
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+ .footerblock-2, .footerblock-4 {
+    width: 80%;
+    float: left;
+    margin-top: 0;
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.footer-container li {
+    border-top: 1px solid #000;
+}
+
+.footer-container li:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.social a {
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+/* ------- END OF FOOTER ------- */
+
+/* ------- OTHERS ------- */
+
+input.inputfields[type='email'].email-home {
+    margin-right: auto;
+    width: 80%;
+}
+
+ .browserbarplayer {
+    display: none;
+}
+
+ #mc_embed_signup .mc-field-group {
+    width: 100%;
+    margin-left: 0;
+}
+
+.slider .mobilehide {
+    display: none;
+}
+
+.slider .mobileshow {
+    display: block;
+}
+
+.flex-align-slide-content {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            padding-right: 3%;
+            padding-left: 3%;
+}
+
+.slide__text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 5%;
+    margin-top: 0;
+}
+
+.slide__mobile__image {
+    position: absolute;
+    opacity: .1;
+    width: 100%;
+}
+
+
+
+.slide__link {
+    margin-top: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.bx-has-pager {
+    bottom:15px;
+}
+
+
+/* ------- END OF OTHERS ------- */
+
+}

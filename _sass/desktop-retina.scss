@@ -1,0 +1,94 @@
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+
+.retina-show {
+    display: block;
+}
+
+.retina-hide {
+    display: none;
+}
+
+.logo {
+    background-image: url("../img/logo-workflowgen-x2-white.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    display: block;
+    width: 200px;
+    height: 38px;
+    position: absolute;
+    left: 8%;
+    top: .9rem;
+}
+
+.sticky-mode .logo {
+    background-image: url("../img/logo-workflowgen-x2.png");
+}
+
+.logo-white {
+    background-image: url("../img/logo-workflowgen-x2-white.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    display: block;
+    width: 200px;
+    height: 38px;
+    position: absolute;
+    left: 8%;
+    top: .9rem;
+}
+
+#wfg-infrastructure {
+    background-image: url(../img/wfg-infrastructure-1900px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 456px;
+    float: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#wfg-form-designer {
+    background-image: url(../img/wfg-form-designer-1900px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 484px;
+    float: left;
+}
+
+#wfg-graphql {
+    background-image: url(../img/wfg-graphql-1900px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 491px;
+    float: left;
+}
+
+#wfg-high-scability {
+    background-image: url(../img/wfg-high-scability-1900px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 417px;
+    float: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#screen-wfg-imanage {
+    background-image: url(../img/wfg-imanage-1800px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 900px;
+    height: 506px;
+}
+
+}

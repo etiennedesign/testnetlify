@@ -1,0 +1,180 @@
+
+		{% if page.lang == 'en' %}
+		<a href="/"><div class="logo"></div></a>
+		{% endif %}
+		{% if page.lang == 'fr' %}
+		<a href="/fr/"><div class="logo"></div></a>
+		{% endif %}
+		{% if page.lang == 'es' %}
+		<a href="/es/"><div class="logo"></div></a>
+		{% endif %}
+		{% if page.lang == 'zh-Hans' %}
+		<a href="/zh-hans/"><div class="logo"></div></a>
+		{% endif %}
+<div class="menu">
+	<nav>
+	<input type="checkbox" id="navigation" />
+	<label for="navigation" class="on"><div class="burger"></div></label>
+    <label for="navigation" class="off"><div class="reduce"></div></label>
+		
+	{% if page.lang == 'en' %}
+
+	<ul class="mainmenu">
+		
+		<li class="{% if page.url == '/en/workflow-management-software-features/' %}current{% endif %}"><a href="/en/workflow-management-software-features/">Features</a></li>
+
+		<li class="{% if page.url == '/en/low-code-bpm-software-technology/' %}current{% endif %}"><a href="/en/low-code-bpm-software-technology/">Technology</a></li>
+
+		<li class="{% if page.url == '/en/bpm-software-customers/' %}current{% endif %}"><a href="/en/bpm-software-customers/">Customers</a></li>
+
+		<li class="{% if page.url == '/en/solutions/' %}current{% endif %}"><a href="/en/solutions/">Solutions</a></li>
+
+		<li class="{% if page.url == '/en/workflow-software-resources/' %}current{% endif %}"><a href="/en/workflow-software-resources/">Resources</a></li>
+
+		<li><a href="https://discuss.workflowgen.com/" target="_blank">Forum</a></li>
+
+		{% assign pages=site.pages | where:"ref", page.ref | sort: 'en-order' %}
+		{% for page in pages limit:3 %}
+  		<li class="lang-mobile"><a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a></li>
+		{% endfor %}
+
+		<li class="hide-mobile"><div class="dropdown-lang">
+		  	<button class="dropbtn">EN</button>
+		 	<div class="dropdown-content">
+				{% assign pages=site.pages | where:"ref", page.ref | sort: 'en-order' %}
+				{% for page in pages limit:3 %}
+		  		<a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a>
+				{% endfor %}
+	 	 	</div>
+	 	</div></li>
+
+	 	<li class="hide-mobile"><a class="btn button-free-trial" href="/en/contact/">Get a demo</a></li>
+
+	 	<a class="button-free-trial-mobile" href="/en/contact/">Get a demo</a>
+
+
+	</ul>
+
+	{% endif %}
+
+	{% if page.lang == 'fr' %}
+
+	<ul class="mainmenu">
+
+		<li class="{% if page.url == '/fr/fonctionnalites-logiciel-gestion-workflow/' %}current{% endif %}"><a href="/fr/fonctionnalites-logiciel-gestion-workflow/">Fonctionnalités</a></li>
+
+		<li class="{% if page.url == '/fr/technologie-logiciel-bpm/' %}current{% endif %}"><a href="/fr/technologie-logiciel-bpm/">Technologie</a></li>
+
+		<li class="{% if page.url == '/fr/clients-logiciel-bpm/' %}current{% endif %}"><a href="/fr/clients-logiciel-bpm/">Clients</a></li>
+
+		<li class="{% if page.url == '/fr/solutions/' %}current{% endif %}"><a href="/fr/solutions/">Solutions</a></li>
+
+		<li class="{% if page.url == '/fr/ressources-logiciel-workflow/' %}current{% endif %}"><a href="/fr/ressources-logiciel-workflow/">Ressources</a></li>
+
+		<li><a href="https://discuss.workflowgen.com/" target="_blank">Forum</a></li>
+
+		{% assign pages=site.pages | where:"ref", page.ref | sort: 'fr-order' %}
+		{% for page in pages limit:3 %}
+  		<li class="lang-mobile"><a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a></li>
+		{% endfor %}
+
+		<li class="hide-mobile">
+			<div class="dropdown-lang">
+			  	<button class="dropbtn">FR</button>
+			 	<div class="dropdown-content">
+					{% assign pages=site.pages | where:"ref", page.ref | sort: 'fr-order' %}
+					{% for page in pages limit:3 %}
+			  		<a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a>
+					{% endfor %}
+		 	 	</div>
+		 	</div>
+		 </li>
+
+	 	<li class="hide-mobile"><a class="btn button-free-trial" href="/fr/contact/">Demandez une démo</a></li>
+
+	 	<a class="button-free-trial-mobile" href="/fr/contact/">Demandez une démo</a>
+
+	</ul>
+	{% endif %}
+
+	{% if page.lang == 'es' %}
+		
+	<ul class="mainmenu">
+
+		<li class="{% if page.url == '/es/funcionalidades-software-gestion-workflow/' %}current{% endif %}"><a href="/es/funcionalidades-software-gestion-workflow/">Funcionalidades</a></li>
+
+		<li class="{% if page.url == '/es/tecnologia-software-bpm/' %}current{% endif %}"><a href="/es/tecnologia-software-bpm/">Tecnologías</a></li>
+
+		<li class="{% if page.url == '/es/clientes-software-bpm/' %}current{% endif %}"><a href="/es/clientes-software-bpm/">Clientes</a></li>
+
+		<li class="{% if page.url == '/es/recursos-software-workflow/' %}current{% endif %}"><a href="/es/recursos-software-workflow/">Recursos</a></li>
+
+		<li><a href="https://discuss.workflowgen.com/" target="_blank">Foro</a></li>
+
+		{% assign pages=site.pages | where:"ref", page.ref | sort: 'es-order' %}
+			{% for page in pages limit:3 %}
+	  		<li class="lang-mobile"><a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a></li>
+			{% endfor %}
+
+			<li class="hide-mobile">
+				<div class="dropdown-lang">
+				  	<button class="dropbtn">ES</button>
+				 	<div class="dropdown-content">
+						{% assign pages=site.pages | where:"ref", page.ref | sort: 'es-order' %}
+						{% for page in pages limit:3 page.lang %}
+				  		<a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a>
+						{% endfor %}
+
+			 	 	</div>
+			 	</div>
+			 </li>
+
+		 	<li class="hide-mobile"><a class="btn button-free-trial" href="/es/contacto/">Obtenga un demo</a></li>
+
+	 	<a class="button-free-trial-mobile" href="/es/contacto/">Obtenga un demo</a>
+	</ul>
+	{% endif %}
+
+	{% if page.lang == 'zh-Hans' %}
+
+	<ul class="mainmenu">
+		
+		<li class="{% if page.url == '/zh-hans/workflow-management-software-features/' %}current{% endif %}"><a href="/zh-hans/workflow-management-software-features/">特征</a></li>
+
+		<li class="{% if page.url == '/zh-hans/low-code-bpm-software-technology/' %}current{% endif %}"><a href="/zh-hans/low-code-bpm-software-technology/">技术</a></li>
+
+		<li class="{% if page.url == '/zh-hans/bpm-software-customers/' %}current{% endif %}"><a href="/zh-hans/bpm-software-customers/">客户</a></li>
+
+		<li class="{% if page.url == '/zh-hans/workflow-software-resources/' %}current{% endif %}"><a href="/zh-hans/workflow-software-resources/">资源</a></li>
+
+		<li><a href="https://discuss.workflowgen.com/" target="_blank">论坛</a></li>
+
+		{% assign pages=site.pages | where:"ref", page.ref | sort: 'zh-order' %}
+		{% for page in pages limit:3 %}
+  		<li class="lang-mobile"><a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a></li>
+		{% endfor %}
+
+		<li class="hide-mobile">
+			<div class="dropdown-lang">
+			  	<button class="dropbtn">中文</button>
+			 	<div class="dropdown-content">
+					{% assign pages=site.pages | where:"ref", page.ref | sort: 'zh-order' %}
+					{% for page in pages limit:3 %}
+			  		<a href="{{ page.url }}" class="{{ page.lang }}" style="text-transform: uppercase;">{{ page.selector }}</a>
+					{% endfor %}
+		 	 	</div>
+		 	</div>
+		 </li>
+
+	 	<li class="hide-mobile"><a class="btn button-free-trial" href="/zh-hans/contact/">获取demo演示</a></li>
+
+	 	<a class="button-free-trial-mobile" href="/zh-hans/contact/">获取demo演示</a>
+
+	</ul>
+
+	{% endif %}
+	
+
+	</nav>
+
+</div>

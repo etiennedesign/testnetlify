@@ -1,0 +1,118 @@
+---
+layout: default-en
+lang: en
+selector: En
+en-order: 4
+fr-order: 1
+es-order: 1
+zh-order: 1
+title: Start your free trial of the WorkflowGen BPM software
+description: Immediately accelerate business process adaptability with the free trial version of the WorkflowGen workflow software.
+image: /img/workflowgen-workflow-thumbnail.png
+ref: free-trial
+permalink: /en/workflow-software-free-trial/
+published: false
+---	
+
+<section id="freetrial" class="download-header">
+				<div class="formcontent">
+				<div class="free-trial-container">
+					<h1>Free Online Trial</h1>
+					<form id="freeTrialForm" name="freeTrialForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="padding-top: 1rem;">
+						<input type="hidden" id="retURL" name="retURL" value="https://www.workflowgen.com/en/thanks-for-trying-workflowgen/" />
+    					<input type="hidden" name="oid" value="00D300000006Ijy">
+   						<input  id="00N0d000003VofK" maxlength="15" name="00N0d000003VofK" value="trial" size="20" type="text" style="display: none;" />
+
+					<div class="line">
+					    <div class="split2-a">
+					        <label for="first_name">First Name</label>
+					        <br /><input type="text" id="first_name" name="first_name" size="30" maxlength="40" class="inputfields" required><br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="last_name">Last Name</label>
+					        <br /><input type="text" id="last_name" name="last_name" size="30" maxlength="80" class="inputfields" required><br />
+					    </div>
+					</div>
+
+					<div class="line">
+					    <div class="split2-a">
+					    	<label for="company">Company</label>
+					        <br /><input type="text" id="company" name="company" size="30" maxlength="40" class="inputfields" required> <br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="phone">Phone</label>
+					        <br /><input type="text" id="phone" name="phone" size="30" maxlength="40" class="inputfields"><br />
+					    </div>
+					</div>
+
+					<div class="line">
+					    <div class="split2-a">
+					    	<label for="email">Business email</label>
+					        <br /><input type="email" id="email" name="email" size="30" maxlength="80" class="inputfields" required><br />
+					    </div>
+
+					    <div class="split2-b">
+					    	<label for="country">Country</label>
+        					<br /><input type="text" id="country" name="country" maxlength="40" class="inputfields" required><br />
+					    </div>
+					</div>
+
+					    <div class="flex-align-center">
+					    	<button id="submit" type="submit" name="submit" class="btn" >Start trial</button>
+					    </div>
+
+						<div class="loader-container">
+					    	<img src="/img/ajax-loader.gif" alt="loading" height="31" width="31" id="loading">
+					    </div>
+
+					    <div class="center greylink" style="padding-top: 40px;">
+					    	<p style="color:#666;">By clicking this button, you agree to our <a href="https://app.box.com/v/wfg-free-trial" target="_blank">Free Trial Agreement</a>.</p>
+					    </div>
+
+					</form>
+				</div>
+				</div>
+</section>
+
+<!-- Get the email field from the cookie -->
+<script type="text/javascript">
+        $(document).ready(function(){
+        	$('#email').val(getCookie("ClientEmail"));
+        });
+        
+        function getCookie(cname) {
+	    var name = cname + "=";
+	    var decodedCookie = decodeURIComponent(document.cookie);
+	    var ca = decodedCookie.split(';');
+	    for(var i = 0; i <ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') {
+	            c = c.substring(1);
+	        }
+	        if (c.indexOf(name) == 0) {
+	            return c.substring(name.length, c.length);
+	        }
+	    }
+	    return "";
+	}
+</script>
+
+<!-- Free email accounts can't submit -->
+<script type="text/javascript">
+$(document).ready(function(e){
+ $('#submit').click(function(){ 
+ var email = $('#email').val();
+ var reg = /^([\w-\.]+@(?!aol.com)(?!att.net)(?!bellsouth.net)(?!charter.net)(?!comcast.net)(?!cox.net)(?!earthlink.net)(?!excite.com)(?!facebook.com)(?!free.fr)(?!gmail.com)(?!gmx.de)(?!googlemail.com)(?!hotmail.co.uk)(?!hotmail.com)(?!hotmail.de)(?!hotmail.fr)(?!hotmail.it)(?!hotmail.kg)(?!hotmail.kz)(?!hotmail.ru)(?!icloud.com)(?!laposte.net)(?!live.ca)(?!live.co.uk)(?!live.com)(?!live.fr)(?!live.nl)(?!lycos.co.uk)(?!lycos.com)(?!lycos.es)(?!lycos.it)(?!mac.com)(?!mail.com)(?!mail.ru)(?!me.com)(?!msn.com)(?!outlook.com)(?!roadrunner.com)(?!sbcglobal.net)(?!verizon.net)(?!web.de)(?!yahoo.ca)(?!yahoo.co.in)(?!yahoo.co.uk)(?!yahoo.com)(?!yahoo.com.au)(?!yahoo.com.br)(?!yahoo.de)(?!yahoo.es)(?!yahoo.fr)(?!yahoo.it)(?!yahoo.ru)(?!yahoo.se)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+  if (reg.test(email)){
+ return 0;
+ }
+ else{
+ swal('Please enter a valid work email');
+ return false;
+ }
+ });
+});
+</script>
+

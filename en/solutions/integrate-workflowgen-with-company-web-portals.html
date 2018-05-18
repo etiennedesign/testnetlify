@@ -1,0 +1,158 @@
+---
+layout: default-en
+lang: en
+selector: En
+en-order: 4
+fr-order: 1
+es-order: 1
+zh-order: 1
+title: WorkflowGen | Workflow Software and Low-Code Platform
+description: Workflow management software and BPM solution. Grow your Digital Business with fluid process automation.
+image: /img/workflowgen-workflow-thumbnail.png
+ref: integrating-workflowgen-with-company-web-portals
+permalink: /en/solutions/integrate-workflowgen-with-company-web-portals/
+---
+
+<section class="bg-edito">
+	<div class="edito-wrapper">
+		
+		<h1>Integrate WorkflowGen with company web portals</h1>
+
+		<h3>Use WorkflowGen’s powerful integration features to automate processes while leveraging existing company software infrastructures</h3>
+
+		<p>
+			Whether on their own or working together in concert, WorkflowGen’s innovative integration features can be used to create countless types of integrations. A great example of this is a use case of WorkflowGen embedded into an insurance company’s existing agent and client portals; this integration uses web services, WorkflowGen URLs, the SENDMESSAGE workflow app and the GraphQL API.
+			
+			<br/><br/>
+			This video takes an up-close look at how this kind of integration is created, how it works, and the end-user experience for agents and clients:
+		</p>
+
+		<div class="videocenter" style="margin-top: 3rem;">
+			<div class="videowrapper">
+				<div class="youtube" data-embed="VGWrfRHuzTM"> 
+   					<div class="play-button"></div> 
+				</div>
+			</div>
+		</div>
+
+		<br/><br/>
+
+		<p>
+			The process is created in WorkflowGen to optimize and automate the entire process from start to finish, ensuring that no steps are forgotten. As well, the SENDMESSAGE app can send automatic text message notifications to the client when the claim has been approved or denied, and can also be used for other kinds of notifications, such as to request missing information on a claim request. This enables immediate, real-time communication between the company and the client.
+		</p>
+
+		<br/><br/>
+
+		<img src="/img/solutions/insurance-claim-process.png" alt="insurance claim process" width="800" height="477" style="max-width: 800px; width: 100%; height: auto">
+
+		<p class="small center">
+			The claims process is configured in WorkflowGen’s graphical workflow designer
+		</p>
+
+		<br/><br/>
+
+		<p>
+			The client logs in to their portal as usual, enters the claim information, and submits the request. The portal makes a web service call to WorkflowGen, which then takes over, routing the claim request through the process workflow while managing all process data, including attachments such as receipts.
+		</p>
+
+		<br/><br/>
+
+		<img src="/img/solutions/client-portal.png" alt="client portal" width="800" height="449" style="max-width: 800px; width: 100%; height: auto">
+
+		<p class="small center">
+			The client portal showing the claim’s pending status
+		</p>
+
+		<br/><br/>
+
+		<p>
+			The agent also logs in to their portal as usual; when they click on the claim, the portal uses a WorkflowGen URL to open a pop-up window containing the WorkflowGen form.
+		</p>
+
+		<br/><br/>
+
+		<img src="/img/solutions/agent-portal-1.png" alt="agent portal 1" width="800" height="451" style="max-width: 800px; width: 100%; height: auto">
+
+		<p class="small center">
+			The agent portal with the WorkflowGen pop-up window displaying the claim form
+		</p>
+
+		<br/><br/>
+
+		<img src="/img/solutions/agent-portal-2.png" alt="agent portal 2" width="800" height="451" style="max-width: 800px; width: 100%; height: auto">
+
+		<p class="small center">
+			The agent views the claim details within the WorkflowGen form
+		</p>
+
+		<br/><br/>
+
+		<img src="/img/solutions/agent-portal-3.png" alt="agent portal 3" width="800" height="451" style="max-width: 800px; width: 100%; height: auto">
+
+		<p class="small center">
+			The agent performs process actions directly within the WorkflowGen form
+		</p>
+
+		<br/><br/>
+
+		<p>
+			Whenever the client or agent returns to their portal, GraphQL will retrieve the most recent data from WorkflowGen, which means that all the information displayed is always up-to-date. And once the claim has been processed, the SENDMESSAGE workflow app will instantly send the client a text message to let them know whether it’s been approved or denied.
+			<br/><br/>
+			This kind of integration is another excellent example of how a WorkflowGen implementation can dramatically improve the entire user experience from start to finish, for clients and employees alike.
+		</p>
+
+		<br/><br/>
+
+		<img src="/img/solutions/insurance-case.png" alt="insurance case" width="800" height="600" style="max-width: 800px; width: 100%; height: auto">
+
+		<p class="small center">
+			WorkflowGen as a central hub for process automation and integration
+		</p>
+
+		<br/><br/>
+
+		<p class="center">
+			<a href="https://medium.com/workflowgen/integrate-and-innovate-with-workflowgen-c13f7d3277c8" target="_blank">Find out more about WorkflowGen integrations</a>
+		</p>
+
+	</div>
+
+	<div class="call-to-action content center">
+    	<h4 class="center" style="color: #fff">Find out more with a solution expert</h4>
+    	<a href="/en/contact/"  class="btn">Schedule a call</a>
+  	</div>
+
+</section>
+
+
+<!-- VIDEO THUMBNAIL SCRIPT -->
+<script type="text/javascript">
+	( function() {
+
+	var youtube = document.querySelectorAll( ".youtube" );
+	
+	for (var i = 0; i < youtube.length; i++) {
+		
+		var source = "/img/yt-thumbnail-"+ youtube[i].dataset.embed +".png";
+		
+		var image = new Image();
+				image.src = source;
+				image.addEventListener( "load", function() {
+					youtube[ i ].appendChild( image );
+				}( i ) );
+		
+				youtube[i].addEventListener( "click", function() {
+
+					var iframe = document.createElement( "iframe" );
+
+							iframe.setAttribute( "frameborder", "0" );
+							iframe.setAttribute( "allowfullscreen", "" );
+							iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&autoplay=1&amp;showinfo=0&amp;cc_load_policy=1" );
+
+							this.innerHTML = "";
+							this.appendChild( iframe );
+				} );	
+	};
+	
+} )();
+</script>
