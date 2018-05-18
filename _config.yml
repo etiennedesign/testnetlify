@@ -1,6 +1,6 @@
 markdown: kramdown
 baseurl: ""
-url: https://www.workflowgen.com
+url: 
 exclude: ['README.md']
 include: ['.htaccess']
 index:
