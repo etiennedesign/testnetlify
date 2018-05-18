@@ -1,6 +1,6 @@
 markdown: kramdown
 baseurl: ""
-url: https://www.workflowgen.com
+url: https://laughing-booth-d07c26.netlify.com
 exclude: ['README.md']
 include: ['.htaccess']
 index:
